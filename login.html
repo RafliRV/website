@@ -2,7 +2,126 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="Style/login.css">
+    <style>
+        body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f4f4f4;
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a, #232323);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(255, 70, 3, 0.596);
+  width: 320px;
+  transition: all 0.3s ease;
+}
+
+.title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.sub_title {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form_style {
+  background: #1a1a1a;
+  border: 2px solid var(--primary-color);
+  color: #f4f4f4;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form_style:focus {
+  border-color: var(--hover-color);
+  box-shadow: 0 0 10px rgba(218, 60, 3, 0.699);
+}
+
+.btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 106, 51, 0.3);
+}
+
+.btn:hover {
+  background: var(--hover-color);
+  transform: translateY(-3px);
+}
+
+.link {
+  margin-top: 10px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--primary-color);
+}
+
+.bergerak {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 25px;
+  animation: fadeInUp 1s ease;
+}
+
+/* Animasi konsisten dengan index.css */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    </style>
     <link rel="icon" href="Gambar/logo.png">
     <script src="script.js"></script>
 </head>
