@@ -9,6 +9,6 @@ function login(){
         alert("Password Tidak Boleh Kosong");
     }else{
         alert("Anda Telah Login, Selamat Datang " + username + "!");
-        window.location.href="index.html";
+        window.location.href="/index";
     }
 }
